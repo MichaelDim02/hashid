@@ -13,7 +13,7 @@ def search(length, chars):
 	print(Style.BRIGHT + Fore.RED + "Possible Hashes:\n")
 	count = 1
 	for row in cur.fetchall():
-		print("["+Fore.WHITE+str(count)+Style.BRIGHT + Fore.RED + "] "+Fore.WHITE+str(row[0]))
+		print(Style.BRIGHT + "["+Fore.WHITE+str(count)+Style.BRIGHT + Fore.RED + "] "+Fore.WHITE+str(row[0]))
 		count = count + 1
 
 print("HASHID - Identify the hash!\nBy MihaelDim02")

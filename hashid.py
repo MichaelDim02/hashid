@@ -26,6 +26,7 @@ print("Houndsniff - Hash Identification Program - Version 0.2\nBy MCD")
 def extract(hash):
     length = len(hash.strip())
     charset = "a"
+    found = False
     if hash.startswith("$P$"):
         print("\n"+Style.BRIGHT + Fore.RED + "["+Fore.WHITE+"1"+Style.BRIGHT + Fore.RED + "] "+Fore.WHITE+str("Wordpress hash")+"\n")
         found = True
